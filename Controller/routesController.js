@@ -5,7 +5,7 @@ const exerciseSchema = require('../Model/ExercisePortal.js')(mongoose);
 const exerciseTracker = new mongoose.model('exercisetracker', exerciseSchema);
 
 route.get('/', (req, res) => {
-    res.send({ message: 'hello from server' });
+    res.send({ message: 'hello from exercise tracker api' });
 });
 
 
